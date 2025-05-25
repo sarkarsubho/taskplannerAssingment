@@ -1,8 +1,8 @@
-export function createTask(text) {
+export function createTask(text, category) {
   return {
     id: Date.now().toString(),
     text,
-    completed: false
+    category,
+    completed: false,
   };
 }
-  

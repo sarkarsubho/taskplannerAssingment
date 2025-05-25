@@ -54,9 +54,13 @@ span.completed {
   text-decoration: line-through;
   opacity: 0.6;
 }
+small.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
 
 #task-list-container {
-  min-height: 90dvh;
+  min-height: 61dvh;
 }
 
 #back-to-top {
@@ -77,4 +81,16 @@ span.completed {
 }
 .deleteBtn:hover{
     transform: scale(1.2);
+}
+
+#clear-section{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+#clear-section>button{
+    color:red;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    background: #dc151544;
 }

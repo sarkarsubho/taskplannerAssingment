@@ -4,10 +4,15 @@ export function renderTasks(tasks, container) {
   container.innerHTML = "";
   tasks.forEach((task) => {
     const li = document.createElement("li");
-    li.className = task.completed ? 'completed' : '';
+    li.className = task.completed ? "completed" : "";
     li.innerHTML = `
+      <div>
       <input type="checkbox" ${task.completed ? "checked" : ""} />
       <span class=${task.completed ? "completed" : ""}>${task.text}</span>
+      <small class=${task.completed ? "completed" : ""}>(${
+      task.category
+    })</small>
+      </div>
       <button data-id="${task.id}" class="deleteBtn">Delete</button>
     `;
 
