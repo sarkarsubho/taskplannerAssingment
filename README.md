@@ -21,12 +21,13 @@ No build tools are required. Vanilla JS used. You can deploy with GitHub Pages.
 
 ## 📦 Deployment
 
-Host using GitHub Pages:
-
-```bash
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin <your-repo-url>
-git push -u origin main
+Host using GitHub Pages or vercel.This is deployed in vercel.
+```
+careate your account on vercel
+connect your git account to vercel
+add new project
+select the repo
+select the base folder
+click on deploy.
+you are live :)
 ```
